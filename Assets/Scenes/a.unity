@@ -350,11 +350,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: f8985457668714f43b62a6d3c5229d62, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: f8985457668714f43b62a6d3c5229d62, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.496
+      value: -0.445
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: f8985457668714f43b62a6d3c5229d62, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1583,7 +1583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raycast: {fileID: 700021373}
-  tiempoRequerido: 1.5
+  tiempoRequerido: 1
 --- !u!1001 &2135164205
 PrefabInstance:
   m_ObjectHideFlags: 0
