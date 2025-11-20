@@ -36,7 +36,7 @@ public class AimAssistRedirector : MonoBehaviour
         // posición objetivo: si es HEAD, perfecto; si no tiene HEAD, levantamos un poco
         Vector3 targetPos = objetivo.position;
 
-        if (objetivo.name != "Head")
+        if (objetivo.name != "Neck")
         {
             targetPos += new Vector3(0, 1.5f, 0); // altura de la cabeza fallback
         }

@@ -29,16 +29,14 @@ public class RaycastingScript : MonoBehaviour
             {
                 objetivoDetectado = true;
 
-                // Buscamos la cabeza en el zombie
-                Transform head = hit.collider.transform.Find("Armature/master/Bone/body1/neck/head");
+                Transform neck = hit.collider.transform.Find("Armature/master/Bone/body1/neck");
 
-                if (head != null)
+                if (neck != null)
                 {
-                    objetivo = head;
+                    objetivo = neck;
                 }
                 else
                 {
-                    // fallback a cuerpo pero con offset de cabeza
                     objetivo = hit.collider.transform;
                 }
             }

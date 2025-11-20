@@ -27,8 +27,24 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.32787165, y: 1.1084313, z: 0.32547745}
-  m_Center: {x: 0.006247014, y: 0.054215968, z: 0.024406165}
+  m_Size: {x: 0.32787165, y: 0.5285317, z: 0.32547745}
+  m_Center: {x: 0.006247014, y: 0.3124417, z: 0.024406165}
+--- !u!114 &7622201260917689671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959788855269809350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1afc410089e396242941ae1cc98e0490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golpesParaMorir: 3
+  rb: {fileID: 2481705636295549071}
+  fuerzaMuerte: 5
+  direccionFuerza: {x: 0, y: 1, z: -1}
 --- !u!1001 &1959788855269907394
 PrefabInstance:
   m_ObjectHideFlags: 0
