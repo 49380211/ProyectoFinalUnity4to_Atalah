@@ -6,6 +6,11 @@ public class Bullet : MonoBehaviour
     {
       
         ZombieHealth zombie = col.collider.GetComponentInParent<ZombieHealth>();
+        LampHealth lamp = col.collider.GetComponentInParent<LampHealth>();
+
+        if (lamp != null)
+            lamp.RegistrarImpacto();
+
 
         if (zombie != null)
             zombie.RegistrarImpacto();

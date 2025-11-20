@@ -42,9 +42,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   golpesParaMorir: 3
-  rb: {fileID: 2481705636295549071}
-  fuerzaMuerte: 5
-  direccionFuerza: {x: 0, y: 1, z: -1}
+  rbZombie: {fileID: 2481705636295549071}
+  silla: {fileID: 0}
 --- !u!1001 &1959788855269907394
 PrefabInstance:
   m_ObjectHideFlags: 0
