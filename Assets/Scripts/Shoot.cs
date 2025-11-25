@@ -5,6 +5,7 @@ public class Shoot : MonoBehaviour
     public GameObject balaPrefab;
     public Transform puntoDisparo;
     public float fuerzaDisparo = 20f;
+    public ParticleSystem muzzleFlash;
 
     void Update()
     {
@@ -24,5 +25,8 @@ public class Shoot : MonoBehaviour
 
         // Aplicar fuerza hacia adelante
         rb.AddForce(puntoDisparo.forward * fuerzaDisparo, ForceMode.Impulse);
+
+        muzzleFlash.Play();
+
     }
 }

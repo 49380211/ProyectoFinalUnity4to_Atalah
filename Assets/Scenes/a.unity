@@ -664,7 +664,12 @@ PrefabInstance:
     - target: {fileID: 7489450269789430186, guid: 0cbf5d30285bff34d86c412cce2d05c3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.56
+      value: -7.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489450269789430186, guid: 0cbf5d30285bff34d86c412cce2d05c3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.653
       objectReference: {fileID: 0}
     - target: {fileID: 8342741743914256383, guid: 0cbf5d30285bff34d86c412cce2d05c3,
         type: 3}
@@ -2543,6 +2548,12 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 0355ad2e397836141bf2624121890f29, type: 3}
+--- !u!198 &1578551645 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6528089198586141878, guid: a162abdce9b41794aa2328ef3d2af6b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4657616526087646133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1628933335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7941451882636288292, guid: a162abdce9b41794aa2328ef3d2af6b0,
@@ -3199,6 +3210,50 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1881608615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881608610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc93aaf4ba2ddf3468350573371c5392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golpesParaRomper: 1
+  luz: {fileID: 1881608614}
+  meshRoot: {fileID: 1881608610}
+--- !u!54 &1881608616
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881608610}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1881608617
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881608610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.17434883, y: 0.08945694, z: 0.23861225}
+  m_Center: {x: 0.011595726, y: -0.0071034445, z: 0.05630897}
 --- !u!1 &1891620706 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1471527126084859696, guid: 79f76fb4d17af2047b247d88e7bb7fee,
@@ -4082,6 +4137,10 @@ PrefabInstance:
       propertyPath: fuerzaDisparo
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 346811200, guid: a162abdce9b41794aa2328ef3d2af6b0, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 1578551645}
     - target: {fileID: 4657616526430111271, guid: a162abdce9b41794aa2328ef3d2af6b0,
         type: 3}
       propertyPath: m_Name
