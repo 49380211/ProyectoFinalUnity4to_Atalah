@@ -9,21 +9,13 @@ public class LightDurability : MonoBehaviour
     public GameObject meshRoot; // Objeto padre del mesh
 
     private bool rota = false;
+    public ParticleSystem glassExplosion;
+    public AudioSource glassBreaking; 
 
-    void Start()
-    {
-        Debug.Log("[LightDurability] Iniciado en: " + gameObject.name);
 
-        if (luz == null)
-            Debug.LogWarning("[LightDurability] No se asignó una luz.");
-
-        if (meshRoot == null)
-            Debug.LogWarning("[LightDurability] No se asignó un meshRoot.");
-    }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("[LightDurability] Colisión con: " + collision.gameObject.name);
 
         if (!collision.gameObject.CompareTag("Bullet"))
             return;
@@ -46,7 +38,6 @@ public class LightDurability : MonoBehaviour
     void RomperLuz()
     {
         rota = true;
-        Debug.Log("[LightDurability] Lámpara rota!");
 
         // Apaga la luz
         if (luz != null)
@@ -62,5 +53,7 @@ public class LightDurability : MonoBehaviour
             foreach (var m in meshes)
                 m.enabled = false;
         }
+        glassExplosion.Play();
+        glassBreaking.Play();
     }
 }

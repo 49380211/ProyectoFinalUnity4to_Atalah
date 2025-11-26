@@ -18,6 +18,7 @@ public class ZombieHealth : MonoBehaviour
     public bool sillaUsaFuerza = false;
     public float fuerzaSilla = 3f;
     public Vector3 direccionSilla = new Vector3(0, 1, -1);
+    public ParticleSystem bloodExplosion;
 
     private bool muerto = false;
 
@@ -46,6 +47,8 @@ public class ZombieHealth : MonoBehaviour
 
             rbZombie.AddForce(dirGlobal * fuerzaZombie, ForceMode.Impulse);
         }
+        
+    bloodExplosion.Play();
 
         // --- SILLA ---
         if (silla != null)
