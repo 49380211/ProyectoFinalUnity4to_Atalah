@@ -7,6 +7,9 @@ public class Shoot : MonoBehaviour
     public float fuerzaDisparo = 20f;
     public ParticleSystem muzzleFlash;
     public AudioSource gunShot;
+    private int shots = 0;
+    private int maxShots = 3;
+    private bool canShoot = true;
 
     void Update()
     {
@@ -18,13 +21,10 @@ public class Shoot : MonoBehaviour
 
     void Disparar()
     {
-        // Crear bala
         GameObject bala = Instantiate(balaPrefab, puntoDisparo.position, puntoDisparo.rotation);
 
-        // Obtener Rigidbody
         Rigidbody rb = bala.GetComponent<Rigidbody>();
 
-        // Aplicar fuerza hacia adelante
         rb.AddForce(puntoDisparo.forward * fuerzaDisparo, ForceMode.Impulse);
 
         muzzleFlash.Play();
