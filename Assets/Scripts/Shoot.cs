@@ -6,6 +6,7 @@ public class Shoot : MonoBehaviour
     public Transform puntoDisparo;
     public float fuerzaDisparo = 20f;
     public ParticleSystem muzzleFlash;
+    public AudioSource gunShot;
 
     void Update()
     {
@@ -27,6 +28,7 @@ public class Shoot : MonoBehaviour
         rb.AddForce(puntoDisparo.forward * fuerzaDisparo, ForceMode.Impulse);
 
         muzzleFlash.Play();
+        gunShot.Play();
 
     }
 }
